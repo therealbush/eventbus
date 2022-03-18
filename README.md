@@ -1,5 +1,5 @@
 # EVENTBUS
-<img src="https://tokei.rs/b1/github/bush-did-711/eventbus" alt="GitHub lines of code"/> <img src="https://img.shields.io/github/languages/code-size/bush-did-711/eventbus" alt="GitHub code size"/> [![](https://jitpack.io/v/bush-did-711/eventbus.svg)](https://jitpack.io/#bush-did-711/eventbus)<br>
+<img src="https://tokei.rs/b1/github/therealbush/eventbus" alt="GitHub lines of code"/> <img src="https://img.shields.io/github/languages/code-size/therealbush/eventbus" alt="GitHub code size"/> [![](https://jitpack.io/v/therealbush/eventbus.svg)](https://jitpack.io/#therealbush/eventbus)<br>
 *An extremely fast, flexible, lightweight, and simple event system aimed towards Minecraft utility mods.*
 
 ## Usage
