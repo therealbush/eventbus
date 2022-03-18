@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'com.github.bush-did-711'
+version '1.0.2'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = targetCompatibility = 1.8
+
+dependencies {
+    // jdk.internal... is an internal api so i need to add it separately
+    compileOnly 'org.ow2.asm:asm:5.2'
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    options.addStringOption('Xdoclint:none', '-quiet')
+}
+publishing {
+    publications {
+        // noinspection GroovyAssignabilityCheck
+        maven(MavenPublication) {
+            // noinspection GroovyAssignabilityCheck
+            from components.java
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = "7.3.3"
+    distributionType = Wrapper.DistributionType.ALL
+}
